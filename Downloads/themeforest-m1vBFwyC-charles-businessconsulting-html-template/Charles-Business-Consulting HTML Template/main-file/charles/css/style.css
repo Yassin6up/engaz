@@ -392,7 +392,7 @@ body .theme-button-one:hover {background:rgb(0, 85, 168); }
   flex-wrap: wrap;
 }
 .single-card{
-  width:25% ;
+  width:250px ;
   height: 350px;
   border-radius: 10px;
   text-align: right;
@@ -631,6 +631,74 @@ justify-content: center;
   animation: menu_sticky 0.7s ease-in-out;
 }
 .header-two .theme-menu-wrapper.fixed {background: #fff;}
+.cardsection{
+  background-color: rgb(233, 238, 244);
+  padding: 10px;
+  height: fit-content;
+  padding-top: 40px;
+}
+.single-basic-card{
+  width: 400px;
+  height: 100px;
+  border-radius: 10px!important;
+  padding: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.single-basic-card::after{
+  content: "";
+  width:20px;
+  height: 60px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%);
+  background-color: #26ace3;
+  transition: 0.5s all;
+
+}
+.single-basic-card::before{
+  content: "";
+  width:20px;
+  height: 60px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  transform: translate(50%);
+  background-color: #26ace3;
+  transition: 0.5s all;
+}
+.single-basic-card:hover::before{
+  width: 100%;
+  height: 100%;
+}
+.single-basic-card:hover::after{
+  width: 110%;
+  height: 110%;
+}
+.single-basic-card .card-details p{
+  transition: 0.5 all;
+}
+.single-basic-card:hover .card-details p{
+  z-index: 10;
+  color: white;
+}
+
+.imgWtsp{
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
 /*---------------------------- Theme Main Banner -------------------------*/
 #theme-main-banner {margin: 0 !important;}
 .camera_wrap {float:none;}
@@ -948,8 +1016,8 @@ justify-content: center;
   gap: 20px;
 }
 .single-counter-box .iconCount{
-  width: 100px;
-  height: 60px;
+  width: 60px;
+  aspect-ratio: 1/1;
 }
 .single-counter-box .iconCount img{
   width: 100%;
