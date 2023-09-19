@@ -50,10 +50,10 @@
 			-->
 			<header class="header-one">
 				<div class="top-header">
-					<div class="container clearfix">
-						<div class="logo float-left logoDiv"><a href="index.html" style="width: 100%; height: 100%;"><img src="images/logo/logo.jfif" class="mainLogo" alt=""></a></div>
-						<div class="address-wrapper float-right">
-							<ul>
+					<div class="container header  clearfix">
+						<div class="logo  logoDiv"><a href="index.html" style="width: 100%; height: 100%;"><img src="images/logo/logo.jfif" class="mainLogo" alt=""></a></div>
+						<div class="address-wrapper">
+							<ul  style="margin-bottom: 0;">
 								<li class="address">
 									<i class="icon flaticon-placeholder"></i>
 									<h6>العنوان :</h6>
@@ -74,19 +74,17 @@
 						<div class="bg-wrapper clearfix">
 							<!-- ============== Menu Warpper ================ -->
 					   		<div class="menu-wrapper float-left">
-					   			<nav id="mega-menu-holder" class="clearfix">
-								   <ul class="clearfix">
-									    <li class="active"><a href="#">الرئيسية</a>
-									    
-									    </li>
+					   			<nav id="mega-menu-holder"style="margin-bottom: 0;" class="clearfix">
+								    <ul class="routes clearfix" style="margin-bottom: 0;">
+									    <li class="active"><a href="#">الرئيسية</a></li>
 									    <li><a href="#">خدمات الأبحاث</a>
 									    	<ul class="dropdown">
-									    		<li><a href="about.html">Test 1</a></li>
-									    		<li><a href="team.html">Test 2</a></li>
-									    		<li><a href="faq.html">Test 3</a></li>
-									    		<li><a href="404.html">Test 4</a></li>
-									    		<li><a href="shop.html">Test 5</a></li>
-									    		<li><a href="shop-details.html">Test 6</a></li>
+									    		<li><a href="">Test 1</a></li>
+									    		<li><a href="">Test 2</a></li>
+									    		<li><a href="">Test 3</a></li>
+									    		<li><a href="">Test 4</a></li>
+									    		<li><a href="">Test 5</a></li>
+									    		<li><a href="">Test 6</a></li>
 									    		</li>
 									       </ul>
 									    </li>
@@ -101,9 +99,9 @@
 									    </li>
 									    <li><a href="#">خدمات تعليمية</a>
 									    	<ul class="dropdown">
-									        	<li><a href="blog.html">test 1</a></li>
-									        	<li><a href="blog-grid.html">test 2</a></li>
-									        	<li><a href="blog-details.html">test 3</a></li>
+									        	<li><a href="">test 1</a></li>
+									        	<li><a href="">test 2</a></li>
+									        	<li><a href="">test 3</a></li>
 									       </ul>
 									    </li>
 									    <li><a href="contact.html">تواصل معنا</a></li>
@@ -112,10 +110,10 @@
 					   		</div> <!-- /.menu-wrapper -->
 
 					   		<div class="right-widget float-right">
-					   			<ul>
+					   			<ul style="margin-bottom: 0;">
 					   				<li class="social-icon">
 					   					<ul>
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook" title="Edit" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -136,14 +134,16 @@
 			============================================== 
 			-->
 			
-			<div class="swiper-container mainSwiper">
+			<div class="swiper-container mainSwiper" style="position: relative;">
 				<div class="swiper-wrapper swiperContentMain">
 					<div class="swiper-slide"><img src="https://engaztranslate.com/wp-content/uploads/2023/01/01-2-1.jpg" alt="Image 1"></div>
 					<div class="swiper-slide"><img src="https://engaztranslate.com/wp-content/uploads/2023/01/02-2-1.jpg" alt="Image 2"></div>
 					<div class="swiper-slide"><img src="https://engaztranslate.com/wp-content/uploads/2023/01/03-2-1.jpg" alt="Image 3"></div>
-					<!-- Add more slides as needed -->
 				</div>
-				<!-- Add pagination and navigation -->
+
+											  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 				
 			</div>
 			
@@ -311,7 +311,9 @@
 								<div class="item swiper-slide"><img src="images/logo/p-4.png" alt=""></div>
 								<div class="item swiper-slide"><img src="images/logo/p-5.png" alt=""></div>
 							</div>
+
 						</div>
+
 					</div>
 				</div>
 			</div> <!-- /.partner-section -->
@@ -333,7 +335,7 @@
 								
 							</div> <!-- /.text -->
 						</div> <!-- /.col- -->
-						<div class="col-lg-6 col-12"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/bW7D3QQ4a_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+						<div class="col-lg-6 col-12"><iframe loading="lazy" width="100%" height="315" src="https://www.youtube.com/embed/bW7D3QQ4a_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 					</div> <!-- /.row -->
 				</div> <!-- /.container -->
@@ -742,8 +744,15 @@
 			 pagination: {
 				 el: '.swiper-pagination',
 			 },
+			   // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 			 
 		 });
+
+
 		 var swiper2 = new Swiper('.swiperPartner', {
 			loop: true,
 			autoplay:true,
