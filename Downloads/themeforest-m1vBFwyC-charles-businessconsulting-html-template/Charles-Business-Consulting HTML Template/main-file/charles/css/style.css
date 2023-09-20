@@ -417,7 +417,7 @@ body .theme-button-one:hover {
 /*------------------- Theme Title ------------------*/
 .theme-title-one {
   position: relative;
-  text-align: center;
+  text-align: right;
 }
 .theme-title-one h2 {
   position: relative;
@@ -432,7 +432,7 @@ body .theme-button-one:hover {
   background: #c3c3c3;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 10%;
   margin-left: -20px;
 }
 .theme-title-one p {
@@ -906,9 +906,27 @@ body .theme-button-one:hover {
   width: 100%;
   height: 100%;
 }
+@keyframes TerrariaLogo {
+  0% {
+    transform: rotate(-2deg);
+  }
+  5% {
+    transform: rotate(2deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  21% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .logoDiv {
   height: 100px;
   width: 150px;
+  animation: ease-in-out infinite TerrariaLogo 1s;
 }
 .theme-menu-wrapper.fixed {
   position: fixed !important;
@@ -1377,7 +1395,7 @@ body .theme-button-one:hover {
 /*------------------ Theme Counter -------------------*/
 .theme-counter {
   background: rgb(233, 238, 244);
-  padding: 55px 0;
+  padding: 55px 0 !important;
 }
 .theme-counter .bg {
   /* background: url(../images/home/pattern.png) no-repeat center center; */
@@ -2850,7 +2868,7 @@ body .theme-button-one:hover {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
 }
 .contact-us-section .img-box {
-  background: url(../images/home/22.jpg) no-repeat center;
+  background: url("https://img.freepik.com/free-photo/silhouette-confident-businesspeople_1098-1768.jpg?size=626&ext=jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   border-radius: 5px 0 0 5px;

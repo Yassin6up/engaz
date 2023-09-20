@@ -104,13 +104,13 @@
     justify-content: space-between;
   }
   ul.routes {
+    backdrop-filter: blur(6px);
     position: absolute;
     left: 0;
-    background-color: #f3f3f38c;
+    background-color: #e4e4e4db;
     top: 62px;
     width: 50vw;
     border-radius: 0 0 15px 15px;
-    backdrop-filter: blur(6px);
   }
   #mega-menu-holder > ul > li.has-submenu > a {
     padding-right: 52px;
@@ -151,7 +151,7 @@
   }
   .header-cards {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 17px;
     gap: 0;
     flex-wrap: wrap;
   }
