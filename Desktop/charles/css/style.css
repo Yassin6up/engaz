@@ -533,8 +533,8 @@ body .theme-button-one:hover {
 }
 
 .swiperContentMain .swiper-slide img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: clamp(100px, 500px, 650px);
 }
 .theme-menu-wrapper .container {
   background-color: rgb(0, 84, 168);
